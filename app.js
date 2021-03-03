@@ -20,7 +20,7 @@ console.log(democraticPresidents);
 
 //2)Filter all presidents to leave only one term Republican presidents HINT use If statement
 const republicanPresidents = presidents.filter(function (republican) { 
-  if (republican.party === 'R') {
+  if (republican.terms === 1 && republican.party === 'R' ) {
     return true;
   }
 }); 
